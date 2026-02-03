@@ -62,7 +62,7 @@ The goal of this project is to build a machine learning model that can predict t
 
    ![UI Screenshot](assets/ui.png)
 
-## ✨ **Future Enhancements**
+##  **Future Enhancements**
 
 - **Explore Other Models**: Implement more advanced models like **LSTM** or **BERT** to improve prediction accuracy.
 - **Deploy the Model**: Create a web application for real-time sentiment analysis using **Flask** or **Streamlit**.
