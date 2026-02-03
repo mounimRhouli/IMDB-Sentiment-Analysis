@@ -48,7 +48,7 @@ The project utilizes the **IMDB Dataset**, a widely recognized benchmark for bin
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/UmmeKulsumTumpa/Sentiment-Analysis-IMDB-Movie-Reviews.git
+    git clone https://github.com/mounimRhouli/IMDB-Sentiment-Analysis.git
     cd IMDB-Sentiment-Analysis
     ```
 
