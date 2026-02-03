@@ -1,5 +1,5 @@
 
-# 🎬 **IMDB Sentiment Analysis using NLP and Logistic Regression** 🎬
+# 🎬 **IMDB Sentiment Analysis using NLP and Logistic Regression** 
 
 Welcome to the **Sentiment Analysis** project! This project uses **Natural Language Processing (NLP)** techniques and **Logistic Regression** to classify movie reviews from the **IMDB dataset** as either **positive** or **negative**. It's an exciting way to see how machine learning can analyze text and predict sentiment. 🌟
 
@@ -39,7 +39,7 @@ The goal of this project is to build a machine learning model that can predict t
 
 ## ⚙️ **Technologies Used**
 
-- **Python** 🐍
+- **Python** 
 - **Pandas**: For data manipulation.
 - **Numpy**: For numerical operations.
 - **NLTK**: For Natural Language Processing.
@@ -68,5 +68,4 @@ The goal of this project is to build a machine learning model that can predict t
 - **Deploy the Model**: Create a web application for real-time sentiment analysis using **Flask** or **Streamlit**.
 - **Expand to Multilingual**: Extend sentiment analysis to reviews in other languages.
 
-**Thank you for checking out this project! 🎬 I hope you find it insightful and fun.** 😄
 
