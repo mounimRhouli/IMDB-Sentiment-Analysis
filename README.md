@@ -1,89 +1,93 @@
-# IMDB Sentiment Analysis
+# Sentiment Analysis of IMDB Movie Reviews
 
-This repository contains a comprehensive implementation of a sentiment analysis model designed to classify IMDB movie reviews as either positive or negative. Leveraging Natural Language Processing (NLP) techniques and Logistic Regression, this project demonstrates a robust pipeline for text classification tasks.
+## 📌 Overview
+This repository hosts a machine learning project dedicated to performing sentiment analysis on the IMDB movie reviews dataset. By leveraging **Natural Language Processing (NLP)** techniques and a **Logistic Regression** classifier, the model accurately categorizes reviews as either **positive** or **negative**.
 
-## Abstract
+The project demonstrates the end-to-end pipeline of a text classification task, including data preprocessing, feature extraction using TF-IDF, model training, and performance evaluation.
 
-Sentiment analysis, a subfield of Natural Language Processing, involves determining the emotional tone behind a body of text. This project utilizes the IMDB dataset containing 50,000 labeled reviews to train a Logistic Regression model. The solution incorporates text preprocessing, TF-IDF vectorization, and model evaluation to achieve high-accuracy predictions.
+---
 
-## Dataset
+## 📖 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Technologies](#-technologies)
+- [Dataset](#-dataset)
+- [Installation & Usage](#-installation--usage)
+- [Model Performance](#-model-performance)
+- [Visualizations](#-visualizations)
+- [Future Enhancements](#-future-enhancements)
 
-The model is trained on the **IMDB Dataset of 50K Movie Reviews**.
-- **Source**: [IMDB Dataset](https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
-- **Size**: 50,000 records
-- **Labels**: Balanced classes (Positive / Negative)
+---
 
-## Methodology
+## 🔑 Key Features
+*   **Robust Text Preprocessing**: Implementation of tokenization, and removal of punctuation and stopwords to clean raw text data.
+*   **Feature Engineering**: Utilization of **TF-IDF (Term Frequency-Inverse Document Frequency)** vectorization to transform text into meaningful numerical representations.
+*   **Predictive Modeling**: Training of a Logistic Regression model optimized for binary classification.
+*   **Interactive Interface**: A user-friendly widget powered by `ipywidgets` allowing for real-time sentiment prediction on custom user input.
 
-The development pipeline follows these standard machine learning stages:
+---
 
-1.  **Data Preprocessing**:
-    *   HTML tag removal.
-    *   Tokenization and normalization.
-    *   Stopword removal using NLTK.
-    *   Noise reduction (punctuation and special character removal).
+## 🛠 Technologies
+The project is built using the **Python** ecosystem with the following core libraries:
+*   **Data Manipulation**: `Pandas`, `NumPy`
+*   **Natural Language Processing**: `NLTK`
+*   **Machine Learning**: `Scikit-learn`
+*   **Visualization**: `Matplotlib`, `Seaborn`
+*   **Interface**: `ipywidgets`
 
-2.  **Feature Extraction**:
-    *   Implementation of **TF-IDF (Term Frequency-Inverse Document Frequency)** vectorization to transform textual data into numerical feature vectors.
+---
 
-3.  **Model Architecture**:
-    *   **Algorithm**: Logistic Regression.
-    *   **Rationale**: Chosen for its efficiency and interpretability in binary classification tasks involving sparse high-dimensional data.
+## 📂 Dataset
+The project utilizes the **IMDB Dataset**, a widely recognized benchmark for binary sentiment classification, containing:
+*   **50,000** movie reviews.
+*   Balanced classes (25k positive, 25k negative).
 
-4.  **Evaluation**:
-    *   Metrics: Accuracy, Precision, Recall, and F1-Score.
-    *   Visualization: Confusion Matrix for error analysis.
+---
 
-## Prerequisites
+## 🚀 Installation & Usage
 
-Ensure the following dependencies are installed in your Python environment:
-
-*   Python 3.x
-*   Pandas
-*   NumPy
-*   NLTK
-*   Scikit-learn
-*   Matplotlib
-*   Seaborn
-*   ipywidgets
-
-## Installation and Usage
-
-To replicate this analysis locally:
-
-1.  **Clone the repository**:
+1.  **Clone the Repository**
     ```bash
     git clone https://github.com/UmmeKulsumTumpa/Sentiment-Analysis-IMDB-Movie-Reviews.git
     cd IMDB-Sentiment-Analysis
     ```
 
-2.  **Execute the Analysis**:
-    *   Open `Sentiment_Analysis_IMDB.ipynb` in Jupyter Notebook or JupyterLab.
-    *   Execute the cells sequentially to preprocess data, train the model, and view results.
+2.  **Environment Setup**
+    Ensure you have Python installed. It is recommended to use a virtual environment. Install dependencies via pip or conda if a `requirements.txt` is present (or manually install the libraries listed above).
 
-3.  **Interactive Inference**:
-    *   The notebook includes an interactive widget allowing for real-time inference on custom user input.
+3.  **Execution**
+    *   Launch Jupyter Notebook:
+        ```bash
+        jupyter notebook Sentiment_Analysis_IMDB.ipynb
+        ```
+    *   Execute the cells sequentially to preprocess data, train the model, and evaluate results.
+    *   Use the interactive UI at the end of the notebook to test custom reviews.
 
-## Performance Results
+---
 
-The Logistic Regression model achieved the following performance metrics on the test set:
+## 📊 Model Performance
+The classification model achieves competitive performance metrics on the test set:
+*   **Accuracy**: **88%**
+*   **Generalization**: The model demonstrates balanced Precision and Recall scores across both classes, indicating robust handling of both positive and negative sentiments.
 
-*   **Accuracy**: ~88%
-*   **Generalization**: The model demonstrates consistent performance across both classes with balanced precision and recall scores.
+---
 
-## Project Structure
+## 📈 Visualizations
 
-```text
-IMDB-Sentiment-Analysis/
-├── Sentiment_Analysis_IMDB.ipynb   # Analysis and Modeling Notebook
-├── IMDB Dataset.csv                # Training Data
-└── README.md                       # Project Documentation
-```
+### Confusion Matrix
+Evaluation of the model's true positive and negative predictions.
 
-## Future Scope
+![Confusion Matrix](assets/confusion-matrix.png)
 
-Potential areas for optimization and extension include:
-*   **Deep Learning Integration**: Implementation of LSTM (Long Short-Term Memory) networks or Transformer-based architectures (e.g., BERT) for enhanced context understanding.
-*   **Deployment**: Packaging the model as a REST API using Flask or FastAPI.
-*   **Hyperparameter Tuning**: employing Grid Search or Randomized Search to further optimize the Logistic Regression parameters.
+### Interactive UI
+Screenshot of the real-time classification interface.
+
+![UI Screenshot](assets/ui.png)
+
+---
+
+## ✨ Future Enhancements
+*   **Deep Learning Integration**: Experimentation with architectures such as **LSTMs** or Transformer-based models (**BERT**) to capture deeper contextual nuances.
+*   **Web Deployment**: Development of a standalone web application using **Flask** or **Streamlit** for broader accessibility.
+*   **Multilingual Support**: Extending the preprocessing pipeline to support sentiment analysis for non-English reviews.
 
