@@ -41,6 +41,7 @@ The project is built using the **Python** ecosystem with the following core libr
 The project utilizes the **IMDB Dataset**, a widely recognized benchmark for binary sentiment classification, containing:
 *   **50,000** movie reviews.
 *   Balanced classes (25k positive, 25k negative).
+*   You can access the dataset here: [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 ---
 
